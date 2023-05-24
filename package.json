@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.ts"
+    "dev": "nodemon server.ts",
+    "start": "npm run build && node build/server.js",
+    "build": "rimraf ./build && tsc"
   },
   "author": "Viktor <viktorhrimli101@gmail.com>",
   "license": "ISC",
@@ -16,6 +18,7 @@
     "joi": "^17.9.2",
     "mongoose": "^7.2.0",
     "morgan": "^1.10.0",
+    "rimraf": "^5.0.1",
     "ts-node": "^10.9.1"
   },
   "devDependencies": {
