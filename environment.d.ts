@@ -5,6 +5,7 @@ declare global {
       PORT: string;
       PORT_DB: string;
       USER_DB: string;
+      URL_DB: string;
       PASSWORD_DB: string;
       SECRET_TOKEN_KEY: string;
       SECRET_REFRESH_JWT: string;
