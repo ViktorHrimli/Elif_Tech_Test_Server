@@ -21,6 +21,9 @@ const orderShema = new Shema(
       type: String,
       require: [true, "Phone is required"],
     },
+    orders: {
+      type: Array,
+    },
   },
   { versionKey: false, timestamps: true }
 );
